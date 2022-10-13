@@ -1,0 +1,37 @@
+.divSwiper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: -100px;
+}
+
+.divSwiperBloco {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.tituloSlideLanding {
+    color: #193A68;
+    margin: 10px 0px;
+}
+
+.descricaoSlideLanding {
+    color: #232323;
+}
+
+.tituloParceiros {
+    display: flex;
+    color: #193A68;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+    margin-bottom: 120px;
+}

@@ -1,0 +1,130 @@
+.cardLocalidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.cardLocalidadeSp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px double #0D4D70;
+    box-shadow: 3px 3px 1px #0D4D70;
+    width: 350px;
+    height: 500px;
+    padding: 5px;
+}
+
+.tituloCardLocalidade {
+    color: #193A68;
+}
+
+.cardLocalidadeSp img { 
+    width: 95%;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.cardLocalidadeRj {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px double #0D4D70;
+    box-shadow: 3px 3px 1px #0D4D70;
+    width: 350px;
+    height: 500px;
+    padding: 5px;
+}
+
+.cardLocalidadeRj img { 
+    width: 95%;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.cardLocalidadeDf {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px double #0D4D70;
+    box-shadow: 3px 3px 1px #0D4D70;
+    width: 350px;
+    height: 500px;
+    padding: 5px;
+}
+
+.cardLocalidadeDf img { 
+    width: 95%;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.texto {
+    padding: 10px;
+    color: #232323;
+    font-size: 14px;
+}
+
+.redesSociaisSp {
+    display: flex;
+    font-size: 40px;
+    color: #0D4D70;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.redesSociaisRj {
+    display: flex;
+    font-size: 40px;
+    color: #0D4D70;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.redesSociaisDf {
+    display: flex;
+    font-size: 40px;
+    color: #0D4D70;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.cardLocalidadeSp:hover {
+    background-color: rgba(223, 223, 223, 0.438);
+    transition: 0.3s;
+}
+
+.cardLocalidadeRj:hover {
+    background-color: rgba(223, 223, 223, 0.438);
+    transition: 0.3s;
+}
+
+.cardLocalidadeDf:hover {
+    background-color: rgba(223, 223, 223, 0.438);
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clik {
+    color: #0D4D70;
+    text-decoration: none;
+}
+
+
