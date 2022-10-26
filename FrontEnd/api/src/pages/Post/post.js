@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+
+
 import { useNavigate } from 'react-router-dom' 
 
 import {useForm} from 'react-hook-form'
@@ -21,8 +23,6 @@ const validationPost = yup.object().shape({
     dataEntrega: yup.string().required(),
 })
 
-
-
 function Post() {
 
     let navigate = useNavigate();
@@ -39,7 +39,6 @@ function Post() {
         console.log("DEU ERRADO, LARGA DE SER BURRO!")
     })
 
-
     return (
         <>
             <div>
@@ -47,57 +46,84 @@ function Post() {
 
                 <main>
                     <div className='card-post'>
-                        <h1>Criar Postagem</h1>
-                        <div className='line-post'></div>
+                        <h2 className='titlePost'>ADICIONE O PEDIDO DO SOFTWARE</h2>
 
                         <div className='card-body-post'>
                             <form onSubmit={handleSubmit(addPost)}>
 
                                 <div className='fields'>
-                                    <label>cpfCliente</label>
-                                    <input type="text" name="cpfCliente" {...register("cpfCliente")}/>
+                                    <label>CPF DO CLIENTE:</label>
+                                    <input 
+                                    type="text" 
+                                    name="cpfCliente"
+                                    placeholder ="123.456.788-55" 
+                                    {...register("cpfCliente")}/>
                                     <p className='error-message'>{errors.cpfCliente?.message}</p>
                                 </div>
 
                                 <div className='fields'>
-                                    <label>nomeCliente</label>
-                                    <input type="text" name="nomeCliente" {...register("nomeCliente")}/>
+                                    <label>NOME DO CLIENTE:</label>
+                                    <input 
+                                    type="text" 
+                                    name="nomeCliente"
+                                    placeholder ="João Conrado" 
+                                    {...register("nomeCliente")}/>
                                     <p className='error-message'>{errors.nomeCliente?.message}</p>
                                 </div>
 
                                 <div className='fields'>
-                                    <label>telefoneCliente</label>
-                                    <input type="text" name="telefoneCliente" {...register("telefoneCliente")}/>
+                                    <label>TELEFONE DO CLIENTE:</label>
+                                    <input 
+                                    type="text" 
+                                    name="telefoneCliente"
+                                    placeholder ="(99) 99999-9999" 
+                                    {...register("telefoneCliente")}/>
                                     <p className='error-message'>{errors.telefoneCliente?.message}</p>
                                 </div>
 
                                 
                                 <div className='fields'>
-                                    <label>softwareDesejado</label>
-                                    <input type="text" name="softwareDesejado" {...register("softwareDesejado")}/>
+                                    <label>SOFTWARE DESEJADO:</label>
+                                    <input 
+                                    type="text" 
+                                    name="softwareDesejado" 
+                                    placeholder ="Front-End em React.js" 
+                                    {...register("softwareDesejado")}/>
                                     <p className='error-message'>{errors.softwareDesejado?.message}</p>
                                 </div>
 
                                 <div className='fields'>
-                                    <label>valorSoftware</label>
-                                    <input type="text" name="valorSoftware" {...register("valorSoftware")}/>
+                                    <label>VALOR DO SOFTWARE (R$): </label>
+                                    <input 
+                                    type="text" 
+                                    name="valorSoftware" 
+                                    placeholder ="4.000,00" 
+                                    {...register("valorSoftware")} />
                                     <p className='error-message'>{errors.valorSoftware?.message}</p>
                                 </div>
 
                                 <div className='fields'>
-                                    <label>desenvolvedor</label>
-                                    <input type="text" name="desenvolvedor" {...register("desenvolvedor")}/>
+                                    <label>DESENVOLVEDOR: </label>
+                                    <input 
+                                    type="text" 
+                                    name="desenvolvedor" 
+                                    placeholder ="Dev Júnior - Conrado" 
+                                    {...register("desenvolvedor")}/>
                                     <p className='error-message'>{errors.desenvolvedor?.message}</p>
                                 </div>
 
                                 <div className='fields'>
-                                    <label>dataEntrega</label>
-                                    <input type="text" name="dataEntrega" {...register("dataEntrega")}/>
+                                    <label>DATA DE ENTREGA: </label>
+                                    <input 
+                                    type="text" 
+                                    name="dataEntrega" 
+                                    placeholder ="dd/MM/yyyy" 
+                                    {...register("dataEntrega")}/>
                                     <p className='error-message'>{errors.dataEntrega?.message}</p>
                                 </div>
 
                                 <div className='btn-post'>
-                                    <button type="submit">Enviar</button>
+                                    <button className='btn-enviar' type="submit">ENVIAR</button>
                                 </div>
 
                             </form>

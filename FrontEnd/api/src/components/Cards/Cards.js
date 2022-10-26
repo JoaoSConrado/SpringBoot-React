@@ -120,7 +120,7 @@ function Cards() {
             </div>
 
             <div>
-                <p className='resumo2'> Caso queira visualizar o código fonte, clique: <a href='https://github.com/JoaoSConrado/RestAPI-controleEstacionamento' target="_blank">RestAPI</a></p>
+                <p className='resumo2'> Caso queira visualizar o código fonte, clique: <a href='https://github.com/JoaoSConrado/SpringBoot-React' target="_blank"> SpringBoot + React.js</a></p>
             </div>
 
             
